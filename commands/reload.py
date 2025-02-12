@@ -1,10 +1,9 @@
-import discord,time
+import discord
 from discord.ext import commands
 
 class Reload(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
-
     @commands.command(name="reload", description="Reloads all the loaded commands without resetting the bot [OWNER ONLY]")
     @commands.is_owner()
     async def reload(self, ctx):
