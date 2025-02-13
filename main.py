@@ -10,7 +10,7 @@ TOKEN = os.getenv("TOKEN")
 intents = discord.Intents.all()
 bot = commands.Bot(command_prefix=".", intents=intents)
 
-GUILD_IDS = [1276905750232432660, 1339190286005309481]
+GUILD_IDS = [1276905750232432660, 1339190286005309481, 1339687676730937426]
 
 @bot.event
 async def on_ready():
@@ -25,7 +25,7 @@ async def on_ready():
         else:
             print(f"Bot is not in server {guild_id}, skipping sync.")
 
-    await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="over virgin monkeys"))
+    await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="over homies"))
 
 async def load_cogs():
     for filename in os.listdir("./commands"):
