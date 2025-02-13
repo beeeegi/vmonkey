@@ -93,5 +93,29 @@
         "description": "",
         "image": "",
         "fields": []
+    },
+
+    {
+        "triggers": ["mech", "mechx4arceus"],
+        "title": "EMBED FOR MECH",
+        "description": "",
+        "image": "",
+        "fields": []
+    },
+
+    {
+        "triggers": ["dottik", "dot", "usrdottik", "ditto", "Ditto.x86_64"],
+        "title": "EMBED FOR DOTTIK",
+        "description": "",
+        "image": "",
+        "fields": []
+    },
+
+    {
+        "triggers": ["miro", "micro", "spectremiro", "MiroSpectre"],
+        "title": "EMBED FOR MICRO",
+        "description": "",
+        "image": "",
+        "fields": []
     }
 ]
