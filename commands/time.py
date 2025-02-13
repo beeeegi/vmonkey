@@ -46,7 +46,7 @@ class Time(commands.Cog):
                     offset = timedelta(hours=int(offset_str) * sign)
 
                 user_time = datetime.utcnow() + offset
-                user_time_str = user_time.strftime("%I:%M %p")
+                user_time_str = user_time.strftime("%I:%M %p (%H:%M)")
 
             embed = discord.Embed(
                 title=f"{user.display_name}'s Time",
