@@ -3,6 +3,8 @@ import json
 import re
 from discord.ext import commands
 
+IGNORED_CHANNEL_IDS = [1339657443525001257, 1339670990992703508, 1339670948164669481]
+
 class Triggers(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
@@ -14,6 +16,9 @@ class Triggers(commands.Cog):
     @commands.Cog.listener()
     async def on_message(self, message):
         if message.author == self.bot.user:
+            return
+
+        if message.channel.id in IGNORED_CHANNEL_IDS:
             return
 
         triggers = self.load_triggers()
