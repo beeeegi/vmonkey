@@ -10,7 +10,7 @@ TOKEN = os.getenv("TOKEN")
 intents = discord.Intents.all()
 bot = commands.Bot(command_prefix=".", intents=intents)
 
-GUILD_IDS = [1276905750232432660, 1339190286005309481, 1339687676730937426]
+GUILD_IDS = [1276905750232432660, 1339686889795620886]
 
 @bot.event
 async def on_ready():
